@@ -1,10 +1,54 @@
 body,html{height:100%;-webkit-tap-highlight-color:transparent}
 html {
-    font-size: 25.6px !important;
+  font-size: 25.6px !important;
+  
 }
 body {
   font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow: auto;
   background-color:#fbf9fe;
+  margin-bottom: 0px;/* Margin bottom by footer height */
+}
+
+#main-header,#main-footer,#main-container{
+  position: absolute;
+  width: 100%;
+}
+#main-header{
+  z-index: 500;
+  top: 0;
+  height:56px;
+  background-color:#78e;
+}
+#main-container{
+  height:auto !important;
+  top:56px;
+  bottom:56px;
+  overflow: auto;
+}
+
+
+#main-footer{
+  z-index: 500;
+  bottom: 0;
+  height:56px;
+  border-top:1px solid #ddd;
+  background-color:#eee;
+}
+.main-tabs
+{    
+  display: table;
+  table-layout: fixed;
+}
+.main-tab {
+  display: table-cell;
+  text-align:center;
+  color:#333;
+}
+.main-tab_active{
+  color:#0b0;
+}
+.main-tab i {
+  font-size:1.3rem;
 }

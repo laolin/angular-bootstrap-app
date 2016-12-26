@@ -3,24 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <title ng-bind='appInfo.pageTitle'>Welcome</title>
   <meta name="description" content="">
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   
   <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/lib/font-awesome/css/font-awesome.min.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    
   
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="index.config.js"></script>
 
 </head>
 <body>
-  <div>
+    
+  <header id="main-header">
+  </header>
+  <div id="main-container">
       <div ng-view></div>
       
-
   </div>
+
+  <footer id="main-footer" class="main-tabs">
+     <div class="main-tab main-tab_active"><i class="fa fa-home" aria-hidden="true"></i><div>tabs-1</div></div>
+     <div class="main-tab"><i class="fa fa-comments" aria-hidden="true"></i><div>tabs-2</div></div>
+     <div class="main-tab"><i class="fa fa-coffee" aria-hidden="true"></i><div>tabs-3</div></div>
+     <div class="main-tab"><i class="fa fa-car" aria-hidden="true"></i><div>tabs-4</div></div>
+     <div class="main-tab"><i class="fa fa-user" aria-hidden="true"></i><div>tabs-5</div></</div>
+  </footer>
 
   <script src="assets/lib/angular-1.5.8/angular.js"></script>
   <script src="assets/lib/angular-1.5.8/angular-route.js"></script>
