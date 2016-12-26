@@ -1,0 +1,10 @@
+body,html{height:100%;-webkit-tap-highlight-color:transparent}
+html {
+    font-size: 25.6px !important;
+}
+body {
+  font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color:#fbf9fe;
+}

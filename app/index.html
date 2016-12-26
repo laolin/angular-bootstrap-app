@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" ng-app="myApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title ng-bind='appInfo.pageTitle'>Welcome</title>
+  <meta name="description" content="">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  
+  <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/lib/font-awesome/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="index.config.js"></script>
+
+</head>
+<body>
+  <div>
+      <div ng-view></div>
+      
+
+  </div>
+
+  <script src="assets/lib/angular-1.5.8/angular.js"></script>
+  <script src="assets/lib/angular-1.5.8/angular-route.js"></script>
+  <script src="assets/lib/angular-1.5.8/angular-resource.js"></script>
+  
+  <script src="modules/index/index.module.js"></script>
+
+  <script src="modules/app.module.js"></script>
+  <script>
+  </script>
+</body>
+</html>
