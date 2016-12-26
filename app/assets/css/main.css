@@ -40,6 +40,8 @@ body {
 {    
   display: table;
   table-layout: fixed;
+  cursor:pointer;
+  padding-top:5px;
 }
 .main-tab {
   display: table-cell;
@@ -50,5 +52,5 @@ body {
   color:#0b0;
 }
 .main-tab i {
-  font-size:1.3rem;
+  font-size:1.0rem;
 }
