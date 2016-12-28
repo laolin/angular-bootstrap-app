@@ -1,11 +1,12 @@
 'use strict';
 
 //保存app设置的全局变量
-var gAppConfig={};
+var gData={};
 
 (function () {
-  gAppConfig.version=1.01;
-  gAppConfig.name="LaoLin's App";
+  gData.version=1.01;
+  gData.name="LaoLin's App";
+  gData.fn={};
   
   
 })();

@@ -19,13 +19,29 @@ body {
   z-index: 500;
   top: 0;
   height:56px;
-  background-color:#78e;
+  background-color:#f90;
+  display: table;
+}
+
+.main-header_content {
+  padding: 0 10px;
+  height:56px;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  color:#fff;
+}
+.main-header_content i{ 
+  font-size:1.3rem;
+  cursor:pointer;
+
 }
 #main-container{
   height:auto !important;
   top:56px;
   bottom:56px;
   overflow: auto;
+  color:#333;
 }
 
 
@@ -49,7 +65,7 @@ body {
   color:#333;
 }
 .main-tab_active{
-  color:#0b0;
+  color:#f90;
 }
 .main-tab i {
   font-size:1.0rem;
