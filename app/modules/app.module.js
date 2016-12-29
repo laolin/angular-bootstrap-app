@@ -5,6 +5,10 @@
 angular.module('myApp', [
 
     'myApp.index',
+    'ui.header',
+    
+    'ui.bootstrap',
+    'ngMaterial',
     'ngRoute'
   ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 #main-header{
-  z-index: 500;
+  z-index: 5;
   top: 0;
   height:56px;
   background-color:#f90;
@@ -24,18 +24,44 @@ body {
 }
 
 .main-header_content {
-  padding: 0 10px;
   height:56px;
   width: 100%;
   display: table-cell;
   vertical-align: middle;
   color:#fff;
+  padding:0 80px 0 40px;
 }
 .main-header_content i{ 
   font-size:1.3rem;
   cursor:pointer;
 
 }
+
+.main-header_left {
+  position:relative;
+  width:40px; 
+  float:left; 
+  margin-left:-40px; 
+  text-align:center;
+}
+.main-header_right {
+  position:relative;
+  width:80px; float:right; margin-right:-80px;
+  text-align:center;
+  color:#888;
+}
+
+/*angular material md-select's margin too big*/
+.main-header_right md-select {
+    margin: auto;
+}
+.round-search {
+    border-radius: 15px;
+    float:left;
+    width:100% !important;
+}
+
+
 #main-container{
   height:auto !important;
   top:56px;

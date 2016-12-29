@@ -10,6 +10,7 @@
   
   <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/lib/angular-material/angular-material.min.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -24,8 +25,15 @@
 <body>
     
   <header id="main-header">
-    <div class="main-header_content">
-      <h4 class="text-center">Loading...</h4>
+    <div class="main-header_content form-inline" ng-controller='uiHeader'>
+      <div class='main-header_left'><img ng-src='{{logoUri}}'/></div>
+      <input type="text" name="search" class="form-control round-search" 
+        ng-model="searchWord" uib-typeahead="state for state in states | filter:$viewValue | limitTo:8" />
+      <div class='main-header_right'> 
+        <md-select ng-model="city" placeholder="城市" class="md-no-underline">
+          <md-option ng-repeat="c in citys" value="{{c}}"><a ng-bind='c'></a></md-option>
+        </md-select>
+      </div> 
     </div>
   </header>
   <div id="main-container">
@@ -39,8 +47,17 @@
   <script src="assets/lib/angular-1.5.8/angular.js"></script>
   <script src="assets/lib/angular-1.5.8/angular-route.js"></script>
   <script src="assets/lib/angular-1.5.8/angular-resource.js"></script>
+  <script src="assets/lib/angular-1.5.8/angular-animate.min.js"></script>
+  <script src="assets/lib/angular-1.5.8/angular-aria.min.js"></script>
+  <script src="assets/lib/angular-1.5.8/angular-messages.min.js"></script>
+
+  <script src="assets/lib/angular-material/angular-material.min.js"></script>
+
+  <script src="assets/lib/ui-bootstrap/ui-bootstrap-tpls-2.3.1.min.js"></script>
   
   <script src="modules/index/index.module.js"></script>
+  <script src="modules/ui-header/ui-header.module.js"></script>
+  <script src="modules/ui-header/ui-header.controller.js"></script>
 
   <script src="modules/app.module.js"></script>
   <script src="assets/js/common.js"></script>
